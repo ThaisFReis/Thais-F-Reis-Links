@@ -1,38 +1,127 @@
-.App {
+body{
+  background-color: #030303;
+  background-image: url(./Assets/Img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #F1EFD6;
+}
+
+.App{
+  background-color: #161616e1;
+  border-radius: 1vw;
+
+  width: 40vw;
+  height: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  border-radius: 1vw 1vw 0 0;
+
+  width: 40vw;
+  height: fit-content;
+
+  margin-top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* If add Image 
+header img {
+  border: #f1efd607 solid 1px;
+  border-radius: 50%;
+
+  width: 7vw;
+  height: fit-content;
+
+  margin: auto;
+  margin-top: 2vw;
+}
+*/
+
+header h1{
+  margin-top: 5vw;
+  margin-bottom: 0;
+
+  color: #fe2908;
+  font-family: HoneyBunney, cursive;
+  font-size: 8vw;
+  font-weight: 500;
+}
+
+header p{
+  width: 18vw;
+  margin: auto;
+  margin-top: 0.5vw;
+
+  font-family: ZerafontsAristotelica, serif;
+  font-size: 1vw;
+  font-weight: bolder;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.content{
+  width: 40vw;
+  height: fit-content;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  margin: auto;
+  margin-top: 3vw;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2vw;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  background-color: #F1EFD6;
+  border: none;
+  border-radius: 0.5vw;
+
+  width: 25vw;
+  height: 2vh;
+  padding: 1.5vw 2vw;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #161616;
+  font-family: TrinidadNeue, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 500; 
+  text-transform: uppercase;
+
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ion-icon{
+  margin-right: 1vw;
+
+  color: #161616;
+  font-size: 1.5vw;
+}
+
+button:hover,
+button:hover ion-icon{
+  background-color: #fe2908;
+  color: #F1EFD6;
 }

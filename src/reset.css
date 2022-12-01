@@ -1,0 +1,194 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #F1EFD6;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*::selection{
+  background-color: #fe2908;
+  color: #F1EFD6;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        to bottom,
+        #fe2908,
+        #F1EFD6,
+        #161616
+    );
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #474747;
+}
+
+ 
+  @font-face {
+    font-family: Galilei;
+    src: url(./Assets/Fonts/Galilei/galileiscript-webfont.woff) format("woff"), url(./Assets/Fonts/Galilei/GalileiScript.woff) format("woff");
+  }
+  
+  .galilei{
+    font-family: Galilei;
+  }
+  
+  @font-face {
+    font-family: Galileo;
+    src: url(./Assets/Fonts/Galileo/galileo-regular-webfont.woff) format("woff"), url(./Assets/Fonts/Galileo/Galileo-regular.woff) format("woff");
+  }
+  
+  .galileo{
+    font-family: Galileo;
+  }
+  
+  @font-face {
+    font-family: HoneyBunney;
+    src: url(./Assets/Fonts/HoneyBunney/Honey\ Bunney-1063.woff) format("woff"), url(./Assets/Fonts/HoneyBunney/HoneyBunney\ Sans-5349.woff) format("woff");
+  }
+  
+  .honeybunney{
+    font-family: HoneyBunney;
+  }
+  
+  @font-face {
+    font-family: Thorin;
+    src: url(./Assets/Fonts/Thorin/thorin-webfont.woff) format("woff");
+  }
+  
+  .thorin{
+    font-family: Thorin;
+  }
+  
+  @font-face {
+    font-family: TrinidadNeue;
+    src: url(./Assets/Fonts/TrinidadNeue/trinidad_neue_black-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_black_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_bold-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_bold_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_light-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_light_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_regular-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_regular_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_semibold-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_semibold_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_thin-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_thin_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_ultralight-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_ultlight_oblique-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_ultrabold-webfont.woff) format("woff"), url(./Assets/Fonts/TrinidadNeue/trinidad_neue_ultrabold_oblique-webfont.woff) format("woff");
+  }
+  
+  .trinidadneue{
+    font-family: TrinidadNeue;
+  }
+  
+  @font-face {
+    font-family: ZerafontsAristotelica;
+    src: url(./Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_display_extralight-webfont.woff) format("woff"), url(./Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_icons_demibold-webfont.woff) format("woff"), url(./Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_small_caps_hairlin-webfont.woff) format("woff"), url(./Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_text_extralight-webfont.woff) format("woff");
+  }
+  
+  .zerafontsaristotelica{
+    font-family: ZerafontsAristotelica;
+  }
