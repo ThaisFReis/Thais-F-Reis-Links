@@ -5,6 +5,7 @@ import CV from "./Assets/CV - Thais Ferreira Reis.pdf";
 
 function App() {
   return (
+  <>
     <div className="App">
       <header>
         <h1>Thais F. Reis</h1>
@@ -12,30 +13,30 @@ function App() {
       <div className="content">
         <a href="https://portfolio-thaisfreis.vercel.app/" target="_blank" rel="noreferrer">
           <button>
-            <ion-icon name="laptop"></ion-icon>
             Portfolio
           </button>
         </a>
         <a href="https://github.com/ThaisFReis" target="_blank" rel="noreferrer">
           <button>
-            <ion-icon name="logo-github"></ion-icon>
             Github
           </button>
         </a>
         <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank" rel="noreferrer">
           <button>
-            <ion-icon name="logo-linkedin"></ion-icon>
             LinkedIn
           </button>
         </a>
         <a href={CV} download="CV - Thais Ferreira Reis.pdf">
           <button>
-            <ion-icon name="download-outline"></ion-icon>
             Download CV
           </button>
         </a>
       </div>
     </div>
+    <footer>
+        <a href="https://br.freepik.com/fotos-gratis/astronautas-saindo-da-cabine-ilustracoes-de-ficcao-cientifica-pintura-digital_14541120.htm#page=2&query=astronauta&position=49&from_view=search&track=sph">Imagem de liuzishan</a> no Freepik
+    </footer>
+  </>
   );
 }
 

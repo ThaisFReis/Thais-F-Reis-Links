@@ -4,9 +4,11 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+
 
   width: 100vw;
-  height: 100vh;
+  height: 100vh!important;
 
   display: flex;
   justify-content: center;
@@ -16,11 +18,12 @@ body{
 }
 
 .App{
-  background-color: #161616e1;
+  background-color: #161616f5;
   border-radius: 1.5vw;
 
   width: 40vw;
   height: 40vw;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
@@ -29,12 +32,8 @@ body{
 }
 
 header{
-  border-radius: 1vw 1vw 0 0;
-
   width: 40vw;
   height: fit-content;
-
-  margin-top: 0;
 
   display: flex;
   flex-direction: column;
@@ -91,20 +90,21 @@ header p{
 }
 
 button{
-  background-color: #F1EFD6;
+  background-color: #f1efd625;
   border: none;
   border-radius: 0.5vw;
+  box-shadow: #030303 0.5px 0.5px 0.5vw;
 
-  width: 25vw;
+  width: 22vw;
   height: 2vh;
-  padding: 1.5vw 2vw;
+  padding: 1.7vw 2vw;
   margin: auto;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  color: #161616;
+  color: #F1EFD6;
   font-family: TrinidadNeue, sans-serif;
   font-size: 1.2vw;
   font-weight: 500; 
@@ -114,8 +114,10 @@ button{
 }
 
 ion-icon{
-  margin: 1vw;
-  color: #161616;
+  margin-left: 4vw;
+  margin-right: 1.5vw;
+  
+  color: #F1EFD6;
   font-size: 1.5vw;
 }
 
@@ -125,88 +127,69 @@ button:hover ion-icon{
   color: #F1EFD6;
 }
 
-@media screen and (max-width: 1300px){
+footer{
+  bottom: 0;
+  right: 1vw;
 
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer, footer a{
+  color: #fe2908;
+  font-family: ZerafontsAristotelica, serif;
+  font-size: 0.8rem;
+  font-weight:  bold; 
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+footer:hover a{
+  color: #F1EFD6;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 926px) {
   .App{
-    width: 50vw;
-    height: 50vw;
+    width: 80vw;
+    height: 90vw;
   }
 
   header{
-    width: 50vw;
-    height: fit-content;
+    width: 80vw;
   }
 
   header h1{
-    margin-top: 6vw;
-
-    font-size: 11vw;
-  }
-
-  header p{
-    width: 54vw;
-    font-size: 3vw;
+    margin-top: 8vw;
+    font-size: 19vw;
   }
 
   .content{
-    width: 50vw;
-    height: fit-content;
-    margin-top: 5vw;
-    gap: 2.5vw;
+    width:  80vw;
+
+    margin: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
   }
 
   button{
-    width: 40vw;
-    height: 2vh;
-    padding: 2vw;
+    width: 55vw;
+    height: fit-content;
+
+    padding: 3vw 2vw;
+
     font-size: 2vw;
   }
 
-  ion-icon{
-    margin-right: 2vw;
-    font-size: 3vw;
+  footer, footer a{
+    font-size: 2vw;
   }
 }
-
-@media screen and (max-width: 790px){
-  
-    .App{
-      width: 80vw;
-      height: 90vw;
-    }
-  
-    header{
-      width: 80vw;
-      height: fit-content;
-    }
-  
-    header h1{
-      margin-top: 10vw;
-  
-      font-size: 20vw;
-    }
-  
-    header p{
-      width: 80vw;
-      font-size: 5vw;
-    }
-  
-    .content{
-      width: 80vw;
-      height: fit-content;
-      margin-top: 8vw;
-      gap: 4.5vw;
-    }
-  
-    button{
-      width: 65vw;
-      height: 2vh;
-      padding: 3.5vw;
-      font-size: 3.2vw;
-    }
-  
-    ion-icon{
-      margin-right: 4vw;
-      font-size: 4vw;
-    }
-  }
